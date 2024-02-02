@@ -1,0 +1,60 @@
+{
+  "contacts": [
+    {
+      "name": "William Johnson",
+      "imageUrl": "https://i.pinimg.com/736x/86/63/78/866378ef5afbe8121b2bcd57aa4fb061.jpg",
+      "mobile": "3210987654",
+      "email": "william.johnson@example.com",
+      "company": "CodeCrafters",
+      "title": "Full Stack Engineer",
+      "groupId": "5",
+      "id": "cc432"
+    },
+    {
+      "name": "Isabella",
+      "imageUrl": "https://media.istockphoto.com/id/1439534054/vector/avatar-icon.jpg?s=612x612&w=0&k=20&c=Sxl74RmWObmnf3jPdzkmAHgS5UkX4sg9ApSAkWJaP30=",
+      "mobile": "9553351234",
+      "email": "thiru@gmail.com",
+      "company": "xdcf",
+      "title": "deverloper",
+      "groupId": "2",
+      "id": "OF_1dM1"
+    },
+    {
+      "name": "THIRUPATHI",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNP4oKUXDbkuEQhaY-AMiOem8EaHZhBQglQQ&usqp=CAU",
+      "mobile": "7013528395",
+      "email": "thirupathimitta7@gmail.com",
+      "title": "Full Stack Developer",
+      "company": "Dhastol",
+      "groupId": "2",
+      "id": "BoeHC3X"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
