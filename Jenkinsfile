@@ -17,7 +17,7 @@ pipeline {
                 sh 'docker tag frontend:v1 prasadchandu/nag:frontend'
             }
         }
-      stage('docker tag') {
+      stage('docker push') {
             steps {
                 sh 'docker push prasadchandu/nag:frontend'
             }
