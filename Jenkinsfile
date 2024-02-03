@@ -27,7 +27,7 @@ pipeline {
                 withSonarQubeEnv('SonarQube') {
                     sh "npm run start"
                 }
-      
+            }
         }
         stage("Quality gate") {
             steps {
