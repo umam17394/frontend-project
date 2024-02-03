@@ -2,19 +2,14 @@ pipeline {
     agent any
 
     stages {
-      stage("Cleanup Workspace") {
+        stage('docker build') {
             steps {
-                cleanWs()
-            }
-        }
-        stage('Docker build') {
-            steps {
-                sh 'docker build -t frontend:v1 .'
+                sh 'docker build -t reactjs:v1 .'
             }
         }
       stage('docker tag') {
             steps {
-                sh 'docker tag frontend:v1 prasadchandu/nag:frontend'
+                sh 'docker tag reactjs:v1 prasadchandu/nag:reactjs'
             }
         }
       stage('docker login') {
@@ -24,21 +19,8 @@ pipeline {
         }
       stage('docker push') {
             steps {
-                sh 'docker push prasadchandu/nag:frontend'
-            }
-        }
-      stage('SonarQube analysis') {
-            steps {
-                withSonarQubeEnv('SonarQube') {
-                    sh "npm run start"
-                }
-            }
-        }
-        stage("Quality gate") {
-            steps {
-                waitForQualityGate abortPipeline: true
+                sh 'docker push prasadchandu/nag:reactjs'
             }
         }
     }
 }
-
