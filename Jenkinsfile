@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('docker build') {
             steps {
-                sh 'docker build -t reactjs:v1 .'
+                sh 'docker build -t react:v1 .'
             }
         }
       stage('docker tag') {
             steps {
-                sh 'docker tag reactjs:v1 prasadchandu/java:reactjs'
+                sh 'docker tag react:v1 prasadchandu/java:reactjs'
             }
         }
       stage('docker login') {
