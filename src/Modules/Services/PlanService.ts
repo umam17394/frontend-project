@@ -3,7 +3,7 @@ import axios from "axios";
 import { IPlanCategory } from "../Models/IPlanCategory";
 
 export class Planservice {
-  private static serverUrl: string = "http://javaapp.myapp22.xyz:8080/plans";
+  private static serverUrl: string = "http://50.16.221.241:8080/plans";
 
   public static getAllPlans(): Promise<{ data: IcreatePlan[] }> {
     let dataUrl: string = `${this.serverUrl}/all`;
